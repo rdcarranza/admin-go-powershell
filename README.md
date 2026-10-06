@@ -15,7 +15,7 @@ Port a PowerShell del proyecto [admin-go-bash](https://github.com/rdcarranza/adm
 
 - Instala cualquier versión de Go indicando solo el número (`1.21.5`).
 - Actualiza o cambia de versión reemplazando la instalada, con confirmación previa.
-- Descarga el `.zip` oficial desde [go.dev/dl](https://go.dev/dl/).
+- Descarga el `.zip` oficial desde [go.dev/dl](https://go.dev/dl/), con barra de progreso.
 - Detecta la arquitectura automáticamente (`amd64`, `arm64` o `386`).
 - Crea el directorio de trabajo (`bin`, `src`, `instaladores`) en `%USERPROFILE%\go`.
 - Agrega Go al `PATH` del sistema.
@@ -142,8 +142,8 @@ Revisá que la versión exista en [go.dev/dl](https://go.dev/dl/) y que tengas c
 **`go` no se reconoce como comando**
 Cerrá y abrí una terminal nueva. El `PATH` del sistema solo se recarga en sesiones nuevas.
 
-**La ventana de administrador se cierra enseguida**
-No debería: espera un Enter al final. Si falla antes, ejecutá el script elevado manualmente desde una consola de administrador para ver el error.
+**La instalación parece no hacer nada después del UAC**
+La parte elevada corre en una ventana oculta y sus mensajes se muestran en tu consola al terminar. Si falla, el error aparece ahí. También podés ejecutar `instalar-inst-go.ps1` a mano desde una consola de administrador para ver todo en vivo.
 
 ## Licencia
 

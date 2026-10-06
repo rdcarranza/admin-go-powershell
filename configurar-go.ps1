@@ -1,4 +1,4 @@
-\xef\xbb\xbf# configurar-go.ps1
+﻿# configurar-go.ps1
 # Agrega el directorio bin de Go al PATH del sistema. Requiere privilegios de administrador.
 
 $esAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()
